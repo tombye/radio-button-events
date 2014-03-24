@@ -66,7 +66,7 @@ recordInteraction = function (event) {
 };
 
 printLastInteraction = function () {
-  var txt = document.createTextNode(lastInteraction);
+  var txt = document.createTextNode('Last interaction: ' + lastInteraction);
 
   interactionConsole.innerHTML = '';
   interactionConsole.appendChild(txt);

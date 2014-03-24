@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Radio button events</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  fieldset {
+    padding: 1em 1em 0;
+    margin-bottom: 1em;
+  }
+  label {
+    float: left;
+    clear: left;
+    background: grey;
+    color: white;
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+  label, 
+  input {
+    cursor: pointer;
+  }
+  #results {
+    clear: left;
+    line-height: 2em;
+    height: 2em;
+    padding: 0 0.5em;
+    border: #333 solid 1px;
+  }
+</style>
+</head>
+<body>
+<h1>Radio button events</h1>
+<form action="">
+  <fieldset>
+    <label for="field-1">
+      Field 1
+      <input type="radio" name="field-1" id="field-1" />
+    </label>
+    <label for="field-2">
+      Field 2
+      <input type="radio" name="field-1" id="field-2" />
+    </label>
+    <label for="field-3">
+      Field 3
+      <input type="radio" name="field-1" id="field-3" />
+    </label>
+    <label for="field-4">
+      Field 4
+      <input type="radio" name="field-1" id="field-4" />
+    </label>
+    <p id="results"></p>
+  </fieldset>
+</form>
+<script type="text/javascript" src="assets/javascripts/main.js"></script>
+</body>
+</html>

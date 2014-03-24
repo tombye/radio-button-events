@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Radio button events</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  #interactions,
+  fieldset {
+    float: left;
+    width: 45%;
+  }
+  #interactions {
+    text-align: left;
+    padding: 1em;
+  }
+  #record {
+    font-size: 1.6em;
+    font-weight: bold;
+    float: left;
+    color: white;
+    background: #0063B1;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+  }
+  #record:focus,
+  #record:hover,
+  #record:active {
+    background: #0591FF;
+  }
+  #interactions p {
+    clear: left;
+    line-height: 2em;
+    height: 2em;
+  }
+  table {
+    border-collapse: collapse;
+    border: solid 1px #333;
+  }
+  th,
+  td {
+    padding: 0.5em;
+  }
+  th {
+    background: grey;
+    color: white;
+    border: solid white 1px;
+  }
+  td {
+    border: solid #333 1px;
+  }
+  fieldset {
+    padding: 1em 1em 0;
+    margin-bottom: 1em;
+  }
+  label {
+    float: left;
+    clear: left;
+    background: grey;
+    color: white;
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+  label, 
+  input {
+    cursor: pointer;
+  }
+  .results {
+    clear: left;
+    line-height: 2em;
+    height: 2em;
+    padding: 0 0.5em;
+    border: #333 solid 1px;
+  }
+</style>
+</head>
+<body>
+<h1>Radio button events</h1>
+<form action="">
+  <fieldset>
+    <h2>Panel</h2>
+    <label for="field-1">
+      Field 1
+      <input type="radio" name="field-1" id="field-1" />
+    </label>
+    <label for="field-2">
+      Field 2
+      <input type="radio" name="field-1" id="field-2" />
+    </label>
+    <label for="field-3">
+      Field 3
+      <input type="radio" name="field-1" id="field-3" />
+    </label>
+    <label for="field-4">
+      Field 4
+      <input type="radio" name="field-1" id="field-4" />
+    </label>
+    <p id="change-events" class="results"></p>
+    <p id="click-events" class="results"></p>
+  </fieldset>
+  <div id="interactions">
+    <h2>Interactions</h2>
+    <a href="#" id="record">Record</a>
+    <p id="interaction-console"></p>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th scope="col">Click</th>
+          <th scope="col">Change</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Arrow key</th>
+          <td id="arrowKey-click"></td>
+          <td id="arrowKey-change"></td>
+        </tr>
+        <tr>
+          <th scope="row">Enter key</th>
+          <td id="enterKey-click"></td>
+          <td id="enterKey-change"></td>
+        </tr>
+        <tr>
+          <th scope="row">Mouse click</th>
+          <td id="mouseClick-click"></td>
+          <td id="mouseClick-change"></td>
+        </tr>
+        <tr>
+          <th scope="row">Space bar</th>
+          <td id="spaceBar-click"></td>
+          <td id="spaceBar-change"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>
+<script type="text/javascript" src="assets/javascripts/main.js"></script>
+</body>
+</html>

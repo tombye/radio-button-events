@@ -18,7 +18,7 @@
     text-align: left;
     padding: 1em;
   }
-  #record {
+  #save {
     font-size: 1.6em;
     font-weight: bold;
     float: left;
@@ -28,15 +28,15 @@
     margin-bottom: 1em;
     text-decoration: none;
   }
-  #record:focus,
-  #record:hover,
-  #record:active {
+  #save:focus,
+  #save:hover,
+  #save:active {
     background: #0591FF;
   }
   #interactions p {
     clear: left;
     line-height: 2em;
-    height: 2em;
+    min-height: 2em;
   }
   table {
     border-collapse: collapse;
@@ -72,8 +72,8 @@
   }
   .results {
     clear: left;
-    line-height: 2em;
-    height: 2em;
+    line-height: 1.5em;
+    min-height: 2em;
     padding: 0 0.5em;
     border: #333 solid 1px;
   }
@@ -105,7 +105,7 @@
   </fieldset>
   <div id="interactions">
     <h2>Interactions</h2>
-    <a href="#" id="record">Record</a>
+    <a href="#" id="save">Save</a>
     <p id="interaction-console"></p>
     <table>
       <thead>

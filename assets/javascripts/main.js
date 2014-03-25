@@ -33,7 +33,7 @@ addEvent = function (elm, event, callback) {
   if (elm.addEventListener) {
     elm.addEventListener(event, callback, false);
   } else {
-    elm.attachEvent(event, callback);
+    elm.attachEvent('on' + event, callback);
   }
 };
 
